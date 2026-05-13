@@ -31,6 +31,7 @@ const port = process.env.PORT || 3000;
 const mongoUri = process.env.MONGODB_URI;
 
 app.use(cors());
+app.use(express.static(process.cwd()));
 app.use(express.json({ type: "application/json" }));
 
 app.get("/health", (req, res) => {
