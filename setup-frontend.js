@@ -191,7 +191,7 @@ const trackingHtmlContent = `<!DOCTYPE html>
 
     <script>
         const statuses = ["Order Confirmed", "Processing", "Out for Delivery", "Arriving Soon", "Delivered"];
-        const PRODUCTION_API_BASE = "https://agkey-tms.onrender.com/api";
+        const PRODUCTION_API_BASE = "https://agkey-pro-tms.onrender.com/api";
         const isLocalFrontend =
             window.location.hostname === "localhost" ||
             window.location.hostname === "127.0.0.1" ||
@@ -551,7 +551,7 @@ const driverHtmlContent = `<!DOCTYPE html>
 
     <script>
         let currentTrackingId = "";
-        const PRODUCTION_API_BASE = "https://agkey-tms.onrender.com/api";
+        const PRODUCTION_API_BASE = "https://agkey-pro-tms.onrender.com/api";
         const isLocalFrontend =
             window.location.hostname === "localhost" ||
             window.location.hostname === "127.0.0.1" ||
