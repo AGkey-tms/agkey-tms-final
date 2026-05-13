@@ -20,6 +20,13 @@ app.get('/', (req, res) => {
     </div>
   `);
 });
+app.get('/tracking.html', (req, res) => {
+  res.sendFile(path.join(process.cwd(), 'tracking.html'));
+});
+
+app.get('/driver.html', (req, res) => {
+  res.sendFile(path.join(process.cwd(), 'driver.html'));
+});
 const port = process.env.PORT || 3000;
 const mongoUri = process.env.MONGODB_URI;
 
