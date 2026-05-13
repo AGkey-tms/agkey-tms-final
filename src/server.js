@@ -9,6 +9,17 @@ const orderRoutes = require("./routes/orderRoutes");
 const shopifyWebhookRoutes = require("./routes/shopifyWebhookRoutes");
 
 const app = express();
+app.get('/', (req, res) => {
+  res.send(`
+    <div style="font-family: sans-serif; text-align: center; padding: 50px;">
+      <h1 style="color: #d32f2f;">Agkey Pro - TMS</h1>
+      <p>专业办公家具交付系统已上线</p>
+      <p style="color: #666;">核心背书：ENF 级环保标准 (≤ 0.025 mg/m³)</p>
+      <hr style="width: 200px; margin: 20px auto;">
+      <p>请输入具体的订单追踪号访问配送状态。</p>
+    </div>
+  `);
+});
 const port = process.env.PORT || 3000;
 const mongoUri = process.env.MONGODB_URI;
 
